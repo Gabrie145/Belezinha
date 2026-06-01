@@ -1,0 +1,11 @@
+body {
+    background-color:rgb(185, 227, 241);
+}
+
+h1{
+    text-align:center;
+    color:rgb(255, 255, 105);
+    text-shadow: 2px 2px 5px rgb(32, 75, 184); 
+    font-family: "Times New Roman", Times, serif;
+     font-size:4vw;
+}
