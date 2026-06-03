@@ -11,10 +11,12 @@ h1{
 }
 
 .img1{
-   max-width: 800px;
+    margin: 10;
+   max-width: 1000px;
 }
 
 p{
-    max-width: 800px;
+    margin: 10;
+    max-width: 1000px;
 }
 
