@@ -10,13 +10,10 @@ h1{
      font-size:4vw;
 }
 
-.img1{
-    margin: 10;
-   max-width: 1000px;
-}
-
 p{
-    margin: 10;
-    max-width: 1000px;
+    margin: 5%;
+    font-family: "Papyrus", fantasy;
+    text-indent: 70px;
+    letter-spacing: 2px;
 }
 
