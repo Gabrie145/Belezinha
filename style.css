@@ -3,7 +3,7 @@ body {
 }
 
 h1{
-    text-align:justify;
+    text-align:center;
     color:rgb(255, 243, 77);
     text-shadow: 2px 2px 5px rgb(2, 31, 104); 
     font-family: "Times New Roman", Times, serif;
@@ -15,6 +15,7 @@ p{
     font-family: "Papyrus", fantasy;
     text-indent: 70px;
     letter-spacing: 2px;
+    text-align-last: center;
 }
 
 .img1{
