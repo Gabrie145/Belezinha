@@ -21,9 +21,11 @@ p{
 .img1{
 margin: auto;
   width:35%;
+  align-items: center;
 }
 
 .img2{
 margin: auto;
   width:25%;
+  align-items: center;
 }
