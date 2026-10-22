@@ -1,49 +1,531 @@
-body {
-    background-color:rgb(206, 239, 249);
-    text-align: center;
+
+/* =====================================
+   ESTILO GERAL DO SITE
+===================================== */
+
+* {
+    box-sizing: border-box;
 }
 
-h1{
-    color:rgb(255, 243, 77);
-    text-shadow: 2px 2px 5px rgb(2, 31, 104); 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(206, 239, 249);
+    text-align: center;
+    color: #15345c;
+    font-family: Arial, sans-serif;
+}
+
+/* =====================================
+   TÍTULO E LOGO
+===================================== */
+
+header {
+    padding: 25px 15px 10px;
+}
+
+.img1 {
+    display: block;
+    width: min(35%, 350px);
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    color: rgb(255, 243, 77);
+    text-shadow: 2px 2px 5px rgb(2, 31, 104);
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
-    font-size:4vw;
+    font-size: clamp(28px, 4vw, 48px);
 }
 
-p{
+/* =====================================
+   MENU HORIZONTAL DAS GERAÇÕES
+===================================== */
+
+.menu-geracoes {
+    display: flex;
+    gap: 12px;
+
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 20px auto 35px;
+    padding: 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+
+    background: linear-gradient(
+        135deg,
+        #063b87,
+        #147bd1
+    );
+
+    border: 3px solid #ffdf35;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 12px #123b6b55;
+}
+
+/* Barra de rolagem */
+
+.menu-geracoes::-webkit-scrollbar {
+    height: 9px;
+}
+
+.menu-geracoes::-webkit-scrollbar-track {
+    background: #082c60;
+    border-radius: 10px;
+}
+
+.menu-geracoes::-webkit-scrollbar-thumb {
+    background: #ffdf35;
+    border-radius: 10px;
+}
+
+/* Opções do menu */
+
+.menu-geracoes a {
+    flex: 0 0 auto;
+
+    scroll-snap-align: center;
+
+    padding: 12px 18px;
+
+    color: #073675;
+    background-color: #ffdf35;
+
+    border: 2px solid #fff3a0;
+    border-radius: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Efeito ao passar o mouse */
+
+.menu-geracoes a:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-4px) scale(1.04);
+
+    box-shadow: 0 4px 10px #001b4d77;
+}
+
+/* Acessibilidade pelo teclado */
+
+.menu-geracoes a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+/* =====================================
+   TEXTOS E PARÁGRAFOS
+===================================== */
+
+p {
     margin: 5%;
+
     font-family: "Papyrus", fantasy;
-    text-indent: 70px;
-    letter-spacing: 2px;
+
+    text-indent: 40px;
+    letter-spacing: 1px;
+
+    line-height: 1.8;
+    text-align: justify;
     text-align-last: center;
 }
 
-.img1{
-  width:35px;
-  text-align: center;
-}
+/* =====================================
+   TÍTULOS DAS GERAÇÕES
+===================================== */
 
-.img2{
-  width:30%;
-  text-align: center;
-}
+h2 {
+    color: rgb(255, 243, 77);
 
-h2{
-    color:rgb(255, 243, 77);
-    text-shadow: 2px 2px 5px rgb(2, 31, 104); 
+    text-shadow: 2px 2px 5px rgb(2, 31, 104);
+
     font-family: "Times New Roman", Times, serif;
-    font-size:2vw;
+    font-size: clamp(22px, 2.5vw, 32px);
+
+    margin-top: 35px;
 }
 
-h3{
-    color:rgb(255, 243, 77);
-    text-shadow: 2px 2px 5px rgb(2, 31, 104); 
+h3 {
+    color: rgb(255, 243, 77);
+
+    text-shadow: 2px 2px 5px rgb(2, 31, 104);
+
     font-family: "Times New Roman", Times, serif;
-    font-size:2vw;
+    font-size: clamp(20px, 2vw, 28px);
 }
 
-.img3{
-  width: 35%;
-  text-align: center;
+/* =====================================
+   SEÇÕES DAS GERAÇÕES
+===================================== */
+
+.geracao {
+    max-width: 1100px;
+
+    margin: 35px auto;
+    padding: 10px 15px 25px;
+
+    scroll-margin-top: 20px;
+}
+
+.geracao p {
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+/* =====================================
+   IMAGENS DAS GERAÇÕES
+===================================== */
+
+.img2,
+.img3,
+.img4 {
+    display: block;
+
+    width: min(80%, 600px);
+    height: auto;
+
+    margin: 25px auto;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px #123b6b33;
+
+    transition: transform 0.3s ease;
+}
+
+.img2:hover,
+.img3:hover,
+.img4:hover {
+    transform: scale(1.02);
+}
+
+/* =====================================
+   RODAPÉ E LISTA DE LINKS
+===================================== */
+
+footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #063b87,
+        #147bd1
+    );
+
+    border-top: 4px solid #ffdf35;
+}
+
+footer h3 {
+    margin-top: 5px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 15px;
+
+    padding: 0;
+    margin: 25px auto;
+
+    list-style: none;
+}
+
+.list li a,
+.voltar-inicio {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    color: #073675;
+    background-color: #ffdf35;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.list li a:hover,
+.voltar-inicio:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+.voltar-inicio {
+    margin-top: 10px;
+}
+
+/* =====================================
+   JANELAS INTERATIVAS
+===================================== */
+
+/* As janelas ficam escondidas inicialmente */
+
+.janela {
+    display: none;
+}
+
+/* A janela selecionada aparece sobre o site */
+
+.janela:target {
+    display: flex;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color: rgba(2, 20, 54, 0.82);
+
+    animation: aparecer 0.3s ease;
+}
+
+/* Cartão que contém as informações */
+
+.conteudo-janela {
+    width: 100%;
+    max-width: 650px;
+
+    max-height: 85vh;
+    overflow-y: auto;
+
+    padding: 25px 30px;
+
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #dff4ff
+    );
+
+    border: 4px solid #ffdf35;
+    border-radius: 22px;
+
+    box-shadow: 0 10px 35px #00000066;
+
+    animation: ampliar 0.3s ease;
+}
+
+/* Título dentro da janela */
+
+.conteudo-janela h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    color: #0750a0;
+    text-shadow: none;
+
+    font-size: clamp(23px, 3vw, 32px);
+}
+
+/* Subtítulos dentro da janela */
+
+.conteudo-janela h3 {
+    margin-top: 25px;
+
+    color: #0750a0;
+    text-shadow: none;
+
+    font-size: 23px;
+}
+
+/* Parágrafos da janela */
+
+.conteudo-janela p {
+    margin: 18px 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    letter-spacing: 0;
+    line-height: 1.7;
+
+    text-indent: 0;
+    text-align: left;
+}
+
+/* Listas de curiosidades */
+
+.conteudo-janela ul {
+    padding-left: 25px;
+
+    text-align: left;
+    line-height: 1.8;
+}
+
+.conteudo-janela li {
+    margin-bottom: 8px;
+}
+
+/* Botão de fechar */
+
+.fechar {
+    display: inline-block;
+
+    margin-bottom: 10px;
+    padding: 10px 16px;
+
+    color: white;
+    background-color: #0750a0;
+
+    border-radius: 9px;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
+}
+
+.fechar:hover {
+    background-color: #d52b35;
+}
+
+/* =====================================
+   ANIMAÇÕES
+===================================== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ampliar {
+    from {
+        transform: scale(0.85);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* =====================================
+   ADAPTAÇÃO PARA CELULARES
+===================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding-top: 20px;
+    }
+
+    .img1 {
+        width: 65%;
+    }
+
+    .menu-geracoes {
+        width: 94%;
+
+        gap: 8px;
+        padding: 10px;
+
+        margin: 15px auto 25px;
+    }
+
+    .menu-geracoes a {
+        padding: 10px 13px;
+        font-size: 13px;
+    }
+
+    p {
+        margin: 8%;
+
+        font-size: 15px;
+        text-indent: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .geracao {
+        padding: 10px;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
+        width: 90%;
+    }
+
+    .conteudo-janela {
+        padding: 20px;
+        max-height: 85vh;
+    }
+
+    .conteudo-janela p {
+        font-size: 15px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list li {
+        width: 100%;
+    }
+}
+
+/* =====================================
+   ACESSIBILIDADE: MENOS ANIMAÇÕES
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .menu-geracoes,
+    .menu-geracoes a,
+    .img2,
+    .img3,
+    .img4,
+    .list li a,
+    .voltar-inicio {
+        transition: none;
+    }
+
+    .janela:target,
+    .conteudo-janela {
+        animation: none;
+    }
 }
