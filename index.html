@@ -1,33 +1,638 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositório, de pokémon, para aula</title>
+
+    <title>Repositório de Pokémon para aula</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<img class= "img1" src="International_Pokémon_logo.svg.png">
-<p><strong>Pokémon</strong>, abreviação de Pocket Monsters, é uma famosa franquia da Nintendo. O universo abrange jogos de videogame, cartas colecionáveis (Pokémon TCG), e jogos mobile, como o popular Pokémon GO. Pokémon é uma franquia de mídia japonesa composta por jogos eletrônicos, séries de anime e filmes, um jogo de cartas colecionáveis e outras mídias relacionadas. A franquia se passa em um universo compartilhado no qual humanos coexistem com criaturas conhecidas pelo nome de Pokémon, uma grande variedade de espécies dotadas de poderes especiais. O público-alvo principal da franquia são crianças de 5 a 12 anos, mas sabe-se que atrai pessoas de todas as idades. Estima-se que Pokémon seja a franquia de mídia de maior faturamento do mundo e uma das franquias de jogos eletrônicos mais vendidas. Pokémon é uma das franquias de videogames mais populares do mundo, criada pela empresa japonesa Nintendo em parceria com a Game Freak. O primeiro jogo foi lançado em 1996 para o console Game Boy e tinha como objetivo capturar, treinar e batalhar com criaturas chamadas Pokémon.</p>
-<h1>JOGOS DA FRANQUIA</h1>
-<h2>1ª GERAÇÃO: KANTO</h2>
-<p>A primeira geração de Pokémon foi composta pelos jogos Pokémon Red, Green (lançado apenas no Japão), Blue e, posteriormente, Yellow. Nesses jogos, os jogadores assumiam o papel de um jovem treinador que explorava a região de Kanto,<strong>カントー地方</strong> (Kantō-chihō), em busca de se tornar o Campeão Pokémon. Durante a aventura, era possível capturar, treinar e batalhar com os 151 Pokémon originais, formando equipes para enfrentar líderes de ginásio e a poderosa Elite dos Quatro. Essa geração apresentou personagens icônicos que se tornaram símbolos da franquia, como Pikachu, Charmander, Bulbasaur e Squirtle. O enorme sucesso desses jogos deu origem a uma das maiores franquias de entretenimento do mundo, inspirando séries animadas, filmes, cartas colecionáveis e diversos outros produtos.</p>
-<img class= "img2" src="images.jpeg">
-<h2>2ª GERAÇÃO: JOHTO</h2>
-<p>A segunda geração começou com Pokémon Gold e Silver, seguidos por Pokémon Crystal, e apresentou a região de Johto,<strong>ジョウト地方 (Jōto-chihō)</strong>. Esses jogos adicionaram 100 novos Pokémon, aumentando a Pokédex para 251 criaturas. Uma das grandes novidades foi o sistema de dia e noite, que fazia alguns Pokémon aparecerem apenas em determinados horários. Também foram introduzidos a reprodução de Pokémon, os Pokémon Bebês, os tipos Sombrio e Aço e novas formas de evolução. Outro destaque é que, depois de completar a aventura em Johto, o jogador pode retornar à região de Kanto, onde pode enfrentar novamente diversos Líderes de Ginásio.</p>
-<img class= "img3" src="gold-silver-crystal-boxart.jpeg">
-<h2>3ª GERAÇÃO: HOENN</h2>
-<p>A terceira geração foi apresentada nos jogos Pokémon Ruby, Sapphire e Emerald, ambientados na região de Hoenn, <strong>ホウエン地方 (Hōen-chihō)</strong>. Essa geração acrescentou 135 novos Pokémon, levando a Pokédex para um total de 386 espécies. Os jogos trouxeram várias mudanças importantes no sistema de batalhas, como as Habilidades e as Naturezas, que influenciam as características dos Pokémon. Também foram introduzidas as Batalhas em Dupla, permitindo que dois Pokémon participassem da batalha ao mesmo tempo. A história também ganhou destaque com os lendários Groudon, Kyogre e Rayquaza e os conflitos entre as equipes Magma e Aqua.</p>
-<img class= "img4" src="pokerubsapem-768x251.png">
-<h2>4ª GERAÇÃO: SINNOH</h2>
-<p>A quarta geração começou com Pokémon Diamond e Pearl e posteriormente recebeu Pokémon Platinum, levando os jogadores para a região de Sinnoh, <strong>シンオウ (Shin'ō)</strong>. Foram adicionados 107 novos Pokémon, muitos deles sendo evoluções de Pokémon de gerações anteriores. A história apresenta importantes Pokémon lendários, como Dialga, Palkia e Giratina, relacionados ao tempo, ao espaço e ao Mundo Distorcido. Essa geração também trouxe melhorias nos gráficos e nas batalhas e ficou marcada pela expansão do sistema de batalhas online. Sinnoh também possui uma grande variedade de ambientes, como montanhas, florestas, cavernas e áreas cobertas de neve.</p>
-<footer>
-<h3>Vídeos e Curiosidades</h3>
-<ul class="list">
-<li><a href="https://www.youtube.com/watch?v=3bUIb87JprY">Qual é Seu Favorito</a></li>
-<li><a href="https://200.201.3.207/UserCheck/PortalMain?IID=5FD6CFE6-8D4B-DB5F-8447-3E190B04BC67&origUrl=aHR0cHM6Ly9wb2tlbW9uZGIubmV0L3Bva2VkZXg">Pokédex</a></li>
-<li><a href="https://www.youtube.com/watch?v=JuYeHPFR3f0">Música de abertura</a></li>
-</ul>
-</footer>
+
+    <!-- TÍTULO DO SITE -->
+
+    <header id="inicio">
+        <img
+            class="img1"
+            src="International_Pokémon_logo.svg.png"
+            alt="Logo de Pokémon"
+        >
+
+        <h1>UNIVERSO POKÉMON</h1>
+    </header>
+
+
+    <!-- MENU HORIZONTAL DAS GERAÇÕES -->
+
+    <nav class="menu-geracoes" aria-label="Menu das gerações Pokémon">
+
+        <a href="#geracao1">1ª Geração</a>
+        <a href="#geracao2">2ª Geração</a>
+        <a href="#geracao3">3ª Geração</a>
+        <a href="#geracao4">4ª Geração</a>
+        <a href="#geracao5">5ª Geração</a>
+        <a href="#geracao6">6ª Geração</a>
+        <a href="#geracao7">7ª Geração</a>
+        <a href="#geracao8">8ª Geração</a>
+        <a href="#geracao9">9ª Geração</a>
+        <a href="#geracao10">Futuro</a>
+
+    </nav>
+
+
+    <!-- INTRODUÇÃO ORIGINAL -->
+
+    <main>
+
+        <section class="introducao">
+
+            <p>
+                <strong>Pokémon</strong>, abreviação de Pocket Monsters,
+                é uma famosa franquia da Nintendo. O universo abrange jogos
+                de videogame, cartas colecionáveis (Pokémon TCG) e jogos
+                mobile, como o popular Pokémon GO.
+
+                Pokémon é uma franquia de mídia japonesa composta por jogos
+                eletrônicos, séries de anime e filmes, um jogo de cartas
+                colecionáveis e outras mídias relacionadas.
+
+                A franquia se passa em um universo compartilhado no qual
+                humanos coexistem com criaturas conhecidas pelo nome de
+                Pokémon, uma grande variedade de espécies dotadas de poderes
+                especiais.
+
+                O público-alvo principal da franquia são crianças de 5 a 12
+                anos, mas sabe-se que atrai pessoas de todas as idades.
+                Estima-se que Pokémon seja a franquia de mídia de maior
+                faturamento do mundo e uma das franquias de jogos eletrônicos
+                mais vendidas.
+
+                Pokémon é uma das franquias de videogames mais populares
+                do mundo, criada pela empresa japonesa Nintendo em parceria
+                com a Game Freak. O primeiro jogo foi lançado em 1996 para
+                o console Game Boy e tinha como objetivo capturar, treinar
+                e batalhar com criaturas chamadas Pokémon.
+            </p>
+
+        </section>
+
+
+        <!-- CONTEÚDO DAS GERAÇÕES -->
+
+        <h1 id="jogos">JOGOS DA FRANQUIA</h1>
+
+
+        <!-- PRIMEIRA GERAÇÃO -->
+
+        <section class="geracao" id="kanto">
+
+            <h2>1ª GERAÇÃO: KANTO</h2>
+
+            <p>
+                A primeira geração de Pokémon foi composta pelos jogos
+                Pokémon Red, Green (lançado apenas no Japão), Blue e,
+                posteriormente, Yellow. Nesses jogos, os jogadores assumiam
+                o papel de um jovem treinador que explorava a região de Kanto,
+                <strong>カントー地方 (Kantō-chihō)</strong>, em busca de se
+                tornar o Campeão Pokémon.
+
+                Durante a aventura, era possível capturar, treinar e batalhar
+                com os 151 Pokémon originais, formando equipes para enfrentar
+                líderes de ginásio e a poderosa Elite dos Quatro.
+
+                Essa geração apresentou personagens icônicos que se tornaram
+                símbolos da franquia, como Pikachu, Charmander, Bulbasaur
+                e Squirtle. O enorme sucesso desses jogos deu origem a uma
+                das maiores franquias de entretenimento do mundo, inspirando
+                séries animadas, filmes, cartas colecionáveis e diversos
+                outros produtos.
+            </p>
+
+            <img class="img2" src="images.jpeg" alt="Jogos da primeira geração">
+
+        </section>
+
+
+        <!-- SEGUNDA GERAÇÃO -->
+
+        <section class="geracao" id="johto">
+
+            <h2>2ª GERAÇÃO: JOHTO</h2>
+
+            <p>
+                A segunda geração começou com Pokémon Gold e Silver,
+                seguidos por Pokémon Crystal, e apresentou a região de Johto,
+                <strong>ジョウト地方 (Jōto-chihō)</strong>.
+
+                Esses jogos adicionaram 100 novos Pokémon, aumentando a
+                Pokédex para 251 criaturas. Uma das grandes novidades foi
+                o sistema de dia e noite, que fazia alguns Pokémon aparecerem
+                apenas em determinados horários.
+
+                Também foram introduzidos a reprodução de Pokémon,
+                os Pokémon Bebês, os tipos Sombrio e Aço e novas formas
+                de evolução. Outro destaque é que, depois de completar
+                a aventura em Johto, o jogador pode retornar à região de
+                Kanto, onde pode enfrentar novamente diversos Líderes
+                de Ginásio.
+            </p>
+
+            <img
+                class="img3"
+                src="gold-silver-crystal-boxart.jpeg"
+                alt="Capas dos jogos Gold, Silver e Crystal"
+            >
+
+        </section>
+
+
+        <!-- TERCEIRA GERAÇÃO -->
+
+        <section class="geracao" id="hoenn">
+
+            <h2>3ª GERAÇÃO: HOENN</h2>
+
+            <p>
+                A terceira geração foi apresentada nos jogos Pokémon Ruby,
+                Sapphire e Emerald, ambientados na região de Hoenn,
+                <strong>ホウエン地方 (Hōen-chihō)</strong>.
+
+                Essa geração acrescentou 135 novos Pokémon, levando a
+                Pokédex para um total de 386 espécies. Os jogos trouxeram
+                várias mudanças importantes no sistema de batalhas, como
+                as Habilidades e as Naturezas, que influenciam as
+                características dos Pokémon.
+
+                Também foram introduzidas as Batalhas em Dupla, permitindo
+                que dois Pokémon participassem da batalha ao mesmo tempo.
+                A história também ganhou destaque com os lendários Groudon,
+                Kyogre e Rayquaza e os conflitos entre as equipes Magma
+                e Aqua.
+            </p>
+
+            <img
+                class="img4"
+                src="pokerubsapem-768x251.png"
+                alt="Jogos Pokémon Ruby, Sapphire e Emerald"
+            >
+
+        </section>
+
+
+        <!-- QUARTA GERAÇÃO -->
+
+        <section class="geracao" id="sinnoh">
+
+            <h2>4ª GERAÇÃO: SINNOH</h2>
+
+            <p>
+                A quarta geração começou com Pokémon Diamond e Pearl e
+                posteriormente recebeu Pokémon Platinum, levando os
+                jogadores para a região de Sinnoh,
+                <strong>シンオウ (Shin'ō)</strong>.
+
+                Foram adicionados 107 novos Pokémon, muitos deles sendo
+                evoluções de Pokémon de gerações anteriores. A história
+                apresenta importantes Pokémon lendários, como Dialga,
+                Palkia e Giratina, relacionados ao tempo, ao espaço e ao
+                Mundo Distorcido.
+
+                Essa geração também trouxe melhorias nos gráficos e nas
+                batalhas e ficou marcada pela expansão do sistema de
+                batalhas online. Sinnoh também possui uma grande variedade
+                de ambientes, como montanhas, florestas, cavernas e áreas
+                cobertas de neve.
+            </p>
+
+        </section>
+
+
+        <!-- QUINTA GERAÇÃO -->
+
+        <section class="geracao" id="unova">
+
+            <h2>5ª GERAÇÃO: UNOVA</h2>
+
+            <p>
+                A quinta geração apresentou a região de Unova e introduziu
+                156 novos Pokémon, elevando o total para 649 espécies.
+                Sua história aborda temas como a relação entre humanos
+                e Pokémon e a liberdade dessas criaturas.
+
+                Os jogos também trouxeram batalhas triplas, batalhas
+                rotacionais e mudanças nos cenários durante os combates.
+                Entre os Pokémon lendários mais conhecidos estão
+                Reshiram, Zekrom e Kyurem.
+            </p>
+
+            <p><strong>Jogos:</strong> Pokémon Black, White,
+                Black 2 e White 2.</p>
+
+        </section>
+
+
+        <!-- SEXTA GERAÇÃO -->
+
+        <section class="geracao" id="kalos">
+
+            <h2>6ª GERAÇÃO: KALOS</h2>
+
+            <p>
+                A sexta geração levou os jogadores para Kalos, uma região
+                inspirada na França. Uma de suas principais novidades
+                foi a introdução do tipo Fada, que modificou algumas
+                estratégias de batalha.
+
+                Também surgiu a Mega Evolução, permitindo que determinadas
+                espécies assumissem temporariamente formas mais poderosas.
+                Os jogos marcaram a chegada dos gráficos tridimensionais
+                à série principal.
+            </p>
+
+            <p><strong>Jogos:</strong> Pokémon X e Y.</p>
+
+        </section>
+
+
+        <!-- SÉTIMA GERAÇÃO -->
+
+        <section class="geracao" id="alola">
+
+            <h2>7ª GERAÇÃO: ALOLA</h2>
+
+            <p>
+                A sétima geração apresentou Alola, um arquipélago de ilhas
+                tropicais. A região introduziu formas regionais de Pokémon
+                conhecidos e os movimentos Z, ataques especiais que podiam
+                ser utilizados durante as batalhas.
+
+                Outra novidade foi a substituição dos tradicionais desafios
+                de ginásio por provas e desafios das ilhas, dando à aventura
+                uma estrutura diferente das gerações anteriores.
+            </p>
+
+            <p><strong>Jogos:</strong> Pokémon Sun, Moon,
+                Ultra Sun e Ultra Moon.</p>
+
+        </section>
+
+
+        <!-- OITAVA GERAÇÃO -->
+
+        <section class="geracao" id="galar">
+
+            <h2>8ª GERAÇÃO: GALAR</h2>
+
+            <p>
+                A oitava geração apresentou Galar, uma região inspirada
+                principalmente no Reino Unido. Os jogos introduziram
+                o fenômeno Dynamax, que aumenta temporariamente o tamanho
+                e o poder de determinados Pokémon.
+
+                Algumas espécies também podiam assumir formas especiais
+                chamadas Gigantamax. A Área Selvagem permitiu explorar
+                ambientes abertos e encontrar Pokémon em diferentes
+                condições climáticas.
+            </p>
+
+            <p><strong>Jogos:</strong> Pokémon Sword e Shield.</p>
+
+        </section>
+
+
+        <!-- NONA GERAÇÃO -->
+
+        <section class="geracao" id="paldea">
+
+            <h2>9ª GERAÇÃO: PALDEA</h2>
+
+            <p>
+                A nona geração apresentou Paldea, uma região inspirada
+                na Península Ibérica. Os jogos trouxeram um mundo aberto
+                que permite explorar diferentes áreas em uma ordem mais
+                livre, além do fenômeno Terastal, que altera o tipo
+                de um Pokémon durante a batalha.
+
+                A história também apresenta Pokémon Paradoxo, associados
+                a conceitos de passado e futuro, ampliando os mistérios
+                desse universo.
+            </p>
+
+            <p><strong>Jogos:</strong> Pokémon Scarlet e Violet.</p>
+
+        </section>
+
+
+        <!-- VÍDEOS E CURIOSIDADES -->
+
+        <footer id="videos">
+
+            <h3>Vídeos e Curiosidades</h3>
+
+            <ul class="list">
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=3bUIb87JprY"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Qual é Seu Favorito
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://pokemondb.net/pokedex"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Pokédex
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/watch?v=JuYeHPFR3f0"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Música de abertura
+                    </a>
+                </li>
+
+            </ul>
+
+            <a class="voltar-inicio" href="#inicio">
+                ↑ Voltar ao início
+            </a>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JANELA INTERATIVA: PRIMEIRA GERAÇÃO -->
+
+    <section id="geracao1" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>1ª Geração — Kanto</h2>
+
+            <p>
+                Kanto marcou o início da franquia em 1996, com 151 Pokémon
+                originais. Pikachu, Charizard, Bulbasaur e Squirtle
+                tornaram-se alguns dos personagens mais reconhecidos
+                da série.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>Mewtwo é um dos Pokémon lendários mais conhecidos.</li>
+                <li>Pokémon Yellow foi inspirado no anime e destacou Pikachu.</li>
+                <li>Os primeiros jogos foram lançados para o Game Boy.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: SEGUNDA GERAÇÃO -->
+
+    <section id="geracao2" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>2ª Geração — Johto</h2>
+
+            <p>
+                Johto acrescentou 100 Pokémon e novidades como a passagem
+                do tempo, a reprodução e os tipos Sombrio e Aço.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>O ciclo de dia e noite influencia os encontros.</li>
+                <li>Os jogos permitem retornar à região de Kanto.</li>
+                <li>Suicune, Raikou e Entei são conhecidos como feras lendárias.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: TERCEIRA GERAÇÃO -->
+
+    <section id="geracao3" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>3ª Geração — Hoenn</h2>
+
+            <p>
+                Hoenn introduziu Habilidades, Naturezas e batalhas em dupla,
+                ampliando as possibilidades estratégicas dos jogos.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>Groudon está associado à terra.</li>
+                <li>Kyogre está associado aos oceanos.</li>
+                <li>Rayquaza tem um papel importante no equilíbrio entre ambos.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: QUARTA GERAÇÃO -->
+
+    <section id="geracao4" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>4ª Geração — Sinnoh</h2>
+
+            <p>
+                Sinnoh expandiu a história mitológica do universo Pokémon,
+                com destaque para o tempo, o espaço e o Mundo Distorcido.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>Dialga está relacionado ao tempo.</li>
+                <li>Palkia está relacionado ao espaço.</li>
+                <li>Giratina está ligado ao Mundo Distorcido.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: QUINTA GERAÇÃO -->
+
+    <section id="geracao5" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>5ª Geração — Unova</h2>
+
+            <p>
+                Unova introduziu 156 novos Pokémon e uma história que
+                questiona como humanos e Pokémon devem conviver.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>Foi a geração que mais acrescentou Pokémon novos em sua estreia.</li>
+                <li>Reshiram e Zekrom representam ideais e verdade na história.</li>
+                <li>Black 2 e White 2 são continuações diretas dos primeiros jogos.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: SEXTA GERAÇÃO -->
+
+    <section id="geracao6" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>6ª Geração — Kalos</h2>
+
+            <p>
+                Kalos introduziu o tipo Fada e a Mega Evolução,
+                além de gráficos tridimensionais na série principal.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>A região foi inspirada na França.</li>
+                <li>Greninja tornou-se um dos Pokémon mais populares dessa geração.</li>
+                <li>Algumas Mega Evoluções mudam habilidades e características de batalha.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: SÉTIMA GERAÇÃO -->
+
+    <section id="geracao7" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>7ª Geração — Alola</h2>
+
+            <p>
+                Alola apresentou uma região tropical, formas regionais
+                e movimentos Z. Seus desafios diferem dos ginásios
+                tradicionais.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>Alola possui quatro ilhas naturais principais e uma ilha artificial.</li>
+                <li>Os Pokémon de Alola podem ter tipos diferentes de suas formas originais.</li>
+                <li>Os movimentos Z são ataques especiais usados nas batalhas.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: OITAVA GERAÇÃO -->
+
+    <section id="geracao8" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>8ª Geração — Galar</h2>
+
+            <p>
+                Galar trouxe o Dynamax, o Gigantamax e a Área Selvagem,
+                com ambientes que permitem encontrar diferentes Pokémon.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>A região foi inspirada no Reino Unido.</li>
+                <li>Nem todos os Pokémon podem usar o Gigantamax.</li>
+                <li>O clima influencia quais espécies aparecem na Área Selvagem.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: NONA GERAÇÃO -->
+
+    <section id="geracao9" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>9ª Geração — Paldea</h2>
+
+            <p>
+                Paldea trouxe exploração em mundo aberto e o fenômeno
+                Terastal, que pode modificar o tipo de um Pokémon
+                durante a batalha.
+            </p>
+
+            <h3>Curiosidades</h3>
+
+            <ul>
+                <li>A região foi inspirada na Península Ibérica.</li>
+                <li>Koraidon e Miraidon são importantes para a exploração.</li>
+                <li>Os Pokémon Paradoxo estão ligados a mistérios do passado e do futuro.</li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- JANELA INTERATIVA: FUTURO -->
+
+    <section id="geracao10" class="janela">
+        <div class="conteudo-janela">
+
+            <a href="#inicio" class="fechar">✖ Fechar</a>
+
+            <h2>O futuro de Pokémon</h2>
+
+            <p>
+                Esta opção é dedicada a teorias, expectativas e novidades
+                sobre o futuro da franquia. Ela não representa uma décima
+                geração principal oficialmente reconhecida.
+            </p>
+
+            <h3>O que podemos imaginar?</h3>
+
+            <ul>
+                <li>Novas regiões para explorar.</li>
+                <li>Novas espécies e formas de Pokémon.</li>
+                <li>Mecânicas inéditas de exploração e batalha.</li>
+            </ul>
+
+        </div>
+    </section>
+
 </body>
 </html>
